@@ -24,6 +24,7 @@ const starshipSchema = new Schema(
     type: {
       type: String,
       enum: ["launcher", "manned", "no-manned"],
+      required: true,
     },
     launch_date: {
       type: Date,

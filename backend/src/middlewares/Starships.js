@@ -1,4 +1,4 @@
-export class Mothership {
+class Mothership {
   constructor(name, weight) {
     this.name = name;
     this.weight = weight;
@@ -25,7 +25,7 @@ export class Mothership {
   }
 }
 
-export class Starship extends Mothership {
+class Starship extends Mothership {
   constructor(name, weight, type, fuel, speed) {
     super(name, weight);
     this.type = type;
@@ -38,7 +38,7 @@ export class Starship extends Mothership {
   }
 
   launch(date) {
-    super.launch();
+    super.launch(date);
     return (this.date = date);
   }
 
@@ -46,9 +46,12 @@ export class Starship extends Mothership {
     return (this.thrust = thrust);
   }
 
-  showFeaturesResume(date) {
+  showFeaturesResume(date, thrust) {
     this.launch(date);
+    this.thrust(thrust);
     const featureText = `${this.name} was lauched at ${this.date}. The type of this ship is ${this.type} and did use ${this.fuel} as fuel. Its weight is ${this.weight} kg and get a max speed of ${this.maxSpeed} km/s and ${this.thrust} MN.`;
     return featureText;
   }
 }
+
+module.exports = { Mothership, Starship };
