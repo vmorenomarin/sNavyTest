@@ -1,3 +1,16 @@
+ /**
+ * Mothersship class creates simple starships objects. 
+ * Starship inherits Mothership elements and override some methods
+ * @param {String} name Starship name.
+ * @param {Number} weight Starship weight in tons.
+ * @param {String} type Starship type: laucher, manned, no-manned.
+ * @param {Date} date Launch date: dd/mm/yyyy
+ * @param {String} fuel Type of fuel used.
+ * @param {Number} speed max speed in km/s
+ * @param {Number} thrust Boots thrust in MN.
+ * @returns {Class}
+ */
+
 class Mothership {
   constructor(name, weight) {
     this.name = name;
