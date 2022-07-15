@@ -15,7 +15,7 @@ This repository stores files to Sofka test. Read next steps to run the test.
 3. Create .env with following content
 
 ````
-DB_URL="mongodb+srv://vmorenomarin:zdxk5QakLyFKkDOV@cluster0.tgr80.mongodb.net/softka-starships?retryWrites=true&w=majority"
+MONGO_URI="mongodb+srv://vmorenomarin:zdxk5QakLyFKkDOV@cluster0.tgr80.mongodb.net/softka-starships?retryWrites=true&w=majority"
 
 PORT=4000
 
