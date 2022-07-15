@@ -49,7 +49,7 @@ PORT=4000
 
 > npm start
 
-2. Open in url or using an Endpoint tester (postman)
+2. Open in url:
 
 > http://127.0.0.1:3000/
 
