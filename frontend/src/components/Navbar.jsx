@@ -5,8 +5,8 @@ export const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <i className="fa fa-rocket"></i> Starship Stock
+          <a className="navbar-brand" href="/">
+            <i className="fa fa-shuttle-space text-danger"></i> Starship Stock
           </a>
           <button
             className="navbar-toggler"
@@ -21,7 +21,7 @@ export const Navbar = () => {
               <a className="nav-link " href="/add">
                 <i className="fa fa-plus"></i> Add Ship
               </a>
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/">
                 <i className="fa fa-eye"></i> Stock
               </a>
             </div>

@@ -21,9 +21,10 @@ starshipCtrl.findStarshipById = async (req, res) => {
     if (!starship) {
       return generalMessage(res, 404, "", false, "Starship not found.");
     }
-    generalMessage(res, 200, starships, ok, "Starship found.");
-  } catch (error) {}
-  generalMessage(res, 500, "", false, error.message);
+    generalMessage(res, 200, starship, true, "Starship found.");
+  } catch (error) {
+    generalMessage(res, 500, "", false, error.message);
+  }
 };
 
 starshipCtrl.addStarship = async (req, res) => {
